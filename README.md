@@ -1,2 +1,2 @@
-# Simple-UILogin-Android-App
- Android App Simple Layout
+## Simple-UILogin-Android-App
+ Android App Simple Login Layout
