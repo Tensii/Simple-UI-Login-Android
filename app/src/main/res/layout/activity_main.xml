@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/parent_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:context=".MainActivity">
+
+    <!--Start of Relative layout off profile image-->
+    <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/avatar"/>
+        <Button
+                android:id="@+id/pick_image"
+                android:layout_toEndOf="@id/image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="Pick image"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <!--End of Relative layout off profile image-->
+
+    <!--Start of Relative layout for signing_in for Username and password -->
+
+    <RelativeLayout
+            android:id="@+id/signing_in_layout"
+            android:layout_below="@id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+                android:id="@+id/warn_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="#FF1F00"
+                android:text="text"
+                android:visibility="gone"/>
+        <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_below="@id/warn_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Name"/>
+        <TextView
+                android:id="@+id/warn_email"
+                android:layout_below="@id/edit_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="#FF1F00"
+                android:text="text"
+                android:visibility="gone"/>
+        <EditText
+
+                android:id="@+id/edit_text_email"
+                android:layout_below="@id/warn_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"/>
+        <TextView
+                android:id="@+id/warn_password"
+                android:layout_below="@id/edit_text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="#FF1F00"
+                android:text="text"
+                android:visibility="gone"/>
+        <EditText
+
+                android:id="@+id/edit_text_password"
+                android:layout_below="@id/warn_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"/>
+    </RelativeLayout>
+    <!--        End of Relative layout for signing_in for Username and password -->
+
+    <!--        Start of radio buttons group-->
+    <RelativeLayout
+            android:id="@+id/gender_layout"
+            android:layout_below="@id/signing_in_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+        <TextView
+                android:id="@+id/gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Gender"
+        />
+        <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_below="@id/gender_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+            <RadioButton
+                    android:id="@+id/gender_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"/>
+            <RadioButton
+                    android:id="@+id/gender_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"/>
+            <RadioButton
+                    android:id="@+id/gender_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <!--End of radio buttons group-->
+
+    <!--Start of country layout-->
+    <RelativeLayout
+            android:layout_below="@id/gender_layout"
+            android:id="@+id/countries_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+        <TextView
+                android:id="@+id/select_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Country"/>
+        <Spinner
+                android:id="@+id/spinner_country"
+                android:layout_toRightOf="@id/select_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:entries="@array/countries"/>
+    </RelativeLayout>
+    <!--End of country layout-->
+
+    <!--layout for th terms-->
+    <RelativeLayout
+            android:padding="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/countries_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView android:id="@+id/licence_header"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="1dp"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:text="The Agreement"
+        />
+        <TextView
+                android:layout_below="@id/licence_header"
+                android:padding="8dp"
+                android:id="@+id/licence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="By check this box you agree the terms license and conditions"
+        />
+        <CheckBox
+                android:padding="8dp"
+                android:id="@+id/agreement"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/licence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textStyle="bold"
+                android:text="I Agree"
+        >
+        </CheckBox>
+    </RelativeLayout>
+    <Button
+            android:id="@+id/button_register"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"/>
+</RelativeLayout>

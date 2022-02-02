@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UI Login</string>
+    <array name="countries">
+        <item>Sudan</item>
+        <item>Egypt</item>
+        <item>KSA</item>
+        <item>Qatar</item>
+        <item>Bahrain</item>
+        <item>Morocco</item>
+    </array>
+</resources>
