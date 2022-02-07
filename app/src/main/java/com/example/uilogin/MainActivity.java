@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(view -> initRegister());
     }
     /**
-     * Snackbar after end from register appear when insert the data correctly*/
+     * Snackbar after end from register appear when insert the data correctly
+     */
     private void initRegister() {
         if (validateData()) {
             if (agreementCheckBox.isChecked()) {
@@ -80,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
         }).show();
     }
     /**
-     * To check the data that had been inserted is validate data*/
+     * To check the data that had been inserted is validate data
+     */
     private boolean validateData() {
         if (nameEditText.getText().toString().equals("")) {
             textWarnName.setVisibility(View.VISIBLE);
@@ -117,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
         parent = findViewById(R.id.parent_layout);
     }
     /**
-     * Method to open the Gallery*/
+     * Method to open the Gallery
+     */
     private void openGallery(){
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE);
