@@ -1,2 +1,3 @@
 ## Simple UI Login Android App
-Android App Simple Login Layout This App is For Beginners in Android
+#Simple Android App For Login Layout 
+This App is For Beginners in Android Using Java
