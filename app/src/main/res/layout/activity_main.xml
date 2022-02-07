@@ -19,14 +19,16 @@
                 android:layout_height="130dp"
                 android:layout_marginStart="28dp"
                 android:src="@drawable/avatar"/>
+
         <Button
-                android:id="@+id/pick_image"
-                android:layout_toEndOf="@id/image_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:text="Pick image"
-                android:layout_centerInParent="true"/>
+            android:id="@+id/pick_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@id/image_profile"
+            android:text="Pick image"
+            android:textColor="#000000" />
     </RelativeLayout>
     <!--End of Relative layout off profile image-->
 
@@ -49,17 +51,20 @@
                 android:textColor="#FF1F00"
                 android:text="text"
                 android:visibility="gone"/>
+
         <EditText
-                android:id="@+id/edit_text_name"
-                android:layout_below="@id/warn_name"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:inputType="text"
-                android:hint="Name"/>
+            android:id="@+id/edit_text_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warn_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
         <TextView
                 android:id="@+id/warn_email"
                 android:layout_below="@id/edit_text_name"
@@ -69,18 +74,21 @@
                 android:textColor="#FF1F00"
                 android:text="text"
                 android:visibility="gone"/>
+
         <EditText
 
-                android:id="@+id/edit_text_email"
-                android:layout_below="@id/warn_email"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:hint="Email"/>
+            android:id="@+id/edit_text_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warn_email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
         <TextView
                 android:id="@+id/warn_password"
                 android:layout_below="@id/edit_text_email"
@@ -90,18 +98,21 @@
                 android:textColor="#FF1F00"
                 android:text="text"
                 android:visibility="gone"/>
+
         <EditText
 
-                android:id="@+id/edit_text_password"
-                android:layout_below="@id/warn_password"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:hint="Password"/>
+            android:id="@+id/edit_text_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warn_password"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
     </RelativeLayout>
     <!--        End of Relative layout for signing_in for Username and password -->
 
@@ -163,13 +174,15 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:text="Country"/>
+
         <Spinner
-                android:id="@+id/spinner_country"
-                android:layout_toRightOf="@id/select_country"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:entries="@array/countries"/>
+            android:id="@+id/spinner_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/select_country"
+            android:entries="@array/countries"
+            tools:ignore="TouchTargetSizeCheck" />
     </RelativeLayout>
     <!--End of country layout-->
 
@@ -212,15 +225,17 @@
         >
         </CheckBox>
     </RelativeLayout>
+
     <Button
-            android:id="@+id/button_register"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="20dp"/>
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
+        android:textColor="#000000" />
 </RelativeLayout>
